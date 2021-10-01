@@ -1,0 +1,108 @@
+body{
+   margin: 0;
+   
+}
+.container{
+
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    margin:0;
+    margin-bottom: 80px;
+    grid-template: 
+    "header" 0.1fr
+    "main"  45em
+    "footer"0.1fr/
+    1fr
+    ;
+    line-height: 5ch;
+}
+
+
+.header {
+    background-color: whitesmoke;
+    grid-area: header;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 5ch;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    
+    grid-template: 
+    "header header header" 0.2fr
+    "img pimg pimg" 0.1fr
+    "quote1 pimg pimg" 0.1fr
+    "quote2 pimg pimg" 0.1fr
+    "quote3 pimg pimg" 0.1fr
+    "quote4 pimg pimg" 0.1fr
+    "quote5 pimg pimg" 0.1fr/
+    0.6fr 0.2fr 0.2fr
+    ;
+}
+
+
+
+.main > .author {
+    display: grid;
+    grid-area: header;
+    place-items: center;
+    font-variant: small-caps;
+    text-decoration: solid underline ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+
+    }
+.quotes-image{
+    display: grid;
+    grid-area: img;
+    height: 50px;
+    margin-left:100px;
+    padding: 2ch;
+    
+}
+.profile-image{
+    grid-area: pimg;
+    height: 300px;
+    margin-top: 50px;
+    padding-top: 90px;
+}
+
+.quote1{
+    grid-area: quote1;
+    
+}
+.quote1, .quote2, .quote3, .quote4, .quote5 > p {
+    padding: 2ch;
+    font-family: "Gill Sans", sans-serif;
+    margin-left: 25ch;
+}
+.quote1, .quote2, .quote3, .quote4, .quote5 {
+    display: grid;
+    
+}
+.quote2{
+    grid-area: quote2;
+    
+}
+
+.quote3{
+    grid-area: quote3;
+   
+}
+
+
+.quote4{
+    grid-area: quote4;
+   
+}
+
+
+.quote5{
+    grid-area: quote5;
+}
+.footer{
+    margin-top: 50px;
+}
